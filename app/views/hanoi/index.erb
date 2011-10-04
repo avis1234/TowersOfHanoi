@@ -5,7 +5,7 @@
 <title>Towers of Hanoi</title>
 <style type="text/css">
   h4 {background-color:orange; width:300pt}
-  h1 {color:red;}
+  h2 {color:red;}
 </style>
 
 </head>
@@ -17,12 +17,22 @@
 		<td></td>
 	  </tr>
 </table>
-<h1>Towers of Hanoi</h1>
-<img src="/assets/towers1.jpg" width="300" height="220" alt="Book" />
+<h2>Towers of Hanoi</h1>
+<img src="/assets/towers1.jpg" width="600" height="200" alt="Book" />
 </br>
-<strong>Choose number of Rings and press START to begin.</strong></br>
-<strong>Press NEXT MOVE for the next step.</strong>
-</br></br>
+
+<form name="myform" action="hanoi" method="post">
+<div align="center">
+<br>
+Enter Rings: <input type="text" size="10">&nbsp;&nbsp;
+<input type="submit" value="START" />&nbsp;&nbsp;
+<input type="submit" value="Next Move"/>
+<br><br>
+</div>
+</form>
+
+<strong>Enter number of Rings and press START to begin.</strong></br>
+<strong>Press Next Move for the next step.</strong></br>
 <a href="http://www.google.com"  align = "left" id="ggl" title="Search Google">GoTo Google</a>
 </body>
 </html>
