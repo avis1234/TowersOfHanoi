@@ -1,9 +1,10 @@
 class Hanoi < ActiveRecord::Base
+  attr_accessor :rngs
+  serialize :moves
 
-  def initialize(r)
-    @rings = r
+  def initialize
     @moves = Array.new
-
+    @rngs = 3
   end
 
   def get_going (from, to, rings)

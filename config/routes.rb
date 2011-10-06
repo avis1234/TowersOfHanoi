@@ -1,11 +1,11 @@
 TowersOfHanoi::Application.routes.draw do
   get "hanoi/set_rings"
-
   get "hanoi/start"
-
   get "hanoi/next_move"
-
   get "hanoi/index"
+  post "hanoi/start"
+  post "hanoi/index"
+  post "hanoi/next_move"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
