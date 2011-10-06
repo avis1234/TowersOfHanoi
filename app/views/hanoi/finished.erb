@@ -22,7 +22,12 @@
 <img src="/assets/towers1.jpg" width="600" height="200" alt="Book" />
 </br>
 
-<%= button_to "Next Move", {:action => "next_move"}%>
+<%= form_for :hanoi, :url => { :action => "start" } do |form| %>
+<%= form.label :name, "Rings:" %>
+<%= form.text_field :rngs, :size=>10 %>
+<%= form.submit "Start" %>
+<% end %>
+<%= button_to "Next Move", {:action => "next_move"}, {:disabled=>"true"}%>
 </br>
 <strong>Enter number of Rings and press START to begin. </strong>
 <strong>Press Next Move for the next step.</strong></br>
